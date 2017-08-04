@@ -30,5 +30,30 @@ users = User.create([{
                          email: "captain@jacksparrow.se",
                          first_name: "Jack",
                          last_name: "Sparrow"
+                     },
+                     {
+                         email: "ben@jerrys.se",
+                         first_name: "Ben",
+                         last_name: "Jerrys"
+                     },
+                     {
+                         email: "han@solo.se",
+                         first_name: "Han",
+                         last_name: "Solo"
+                     },
+                     {
+                         email: "luke@leia.se",
+                         first_name: "Luke",
+                         last_name: "Leia"
+                     },
+                     {
+                         email: "laikan@spacedog.se",
+                         first_name: "Laika",
+                         last_name: "Spacedog"
+                     },
+                     {
+                         email: "calvin@klein.se",
+                         first_name: "Calvin",
+                         last_name: "Klein"
                      }])
 
