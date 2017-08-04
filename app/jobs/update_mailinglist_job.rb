@@ -1,7 +1,13 @@
 class UpdateMailinglistJob < ApplicationJob
-  queue_as :default
+  RUN_EVERY = 1.day
 
-  def perform(*args)
-    # Do something later
+  def perform
+    MailingListController.new.addUsers
   end
+
+  after_perform do
+    self.class.set(wait: RUN_EVERY).perform_later
+  end
+
 end
+
